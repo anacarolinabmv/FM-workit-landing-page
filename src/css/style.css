@@ -43,6 +43,8 @@ body {
 .paragraph {
   font-size: 1.8rem;
   font-weight: 400;
+  line-height: 1.8;
+  font-family: "Manrope", sans-serif;
 }
 
 .container {
@@ -53,7 +55,7 @@ body {
 
 .navbar {
   display: flex;
-  padding: 4rem 8rem;
+  padding: 4rem 0;
   justify-content: space-between;
 }
 
@@ -62,6 +64,9 @@ body {
   height: 73rem;
   z-index: 5;
   position: relative;
+}
+.header .container {
+  padding: 0 12rem;
 }
 .header::after {
   content: "";
@@ -83,6 +88,65 @@ body {
 }
 .header__img {
   width: 100%;
+}
+
+.details {
+  z-index: 4;
+  position: relative;
+  color: #24053e;
+  height: 67rem;
+}
+.details::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fcf8ff;
+  border-radius: 50%;
+  transform-origin: bottom;
+  transform: scale(4);
+  z-index: -1;
+}
+.details .container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 12rem;
+}
+.details .card {
+  margin-top: 22rem;
+}
+
+.about .container {
+  padding: 10rem 12rem;
+  position: relative;
+}
+.about .founder {
+  height: 40rem;
+  width: 40rem;
+  position: absolute;
+}
+.about .founder__img {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.about .about-text {
+  background-color: #24053e;
+  padding: 6rem;
+  color: #fff;
+  width: 60%;
+  margin-left: 36rem;
+  margin-top: 14rem;
+  z-index: 2;
+  position: relative;
+}
+.about .about-text__heading {
+  margin-bottom: 4rem;
+}
+.about .about-text__paragraph {
+  margin-bottom: 2.5rem;
 }
 
 .btn--inline {
@@ -117,6 +181,31 @@ body {
   background-color: #44ffa1;
   height: 2px;
   z-index: 4;
+}
+
+.card {
+  text-align: center;
+  padding: 3rem;
+}
+.card__number-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.6rem;
+  width: 5.6rem;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  margin: 0 auto;
+}
+.card__number {
+  font-family: "Fraunces", serif;
+  font-size: 2.4rem;
+}
+.card__heading {
+  margin-top: 5rem;
+}
+.card__text {
+  margin-top: 3rem;
 }
 
 .mg-bottom-sm {

@@ -1,0 +1,32 @@
+.btn--inline {
+  display: inline-block;
+  color: $white;
+  border-bottom: 2px solid $green;
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+}
+.btn--green:link,
+.btn--green:visited {
+  color: $purple;
+  display: inline-block;
+  background-color: $green;
+  padding: 1.5rem 3rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.underline--green {
+  position: relative;
+  z-index: 2;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    background-color: $green;
+    height: 2px;
+    z-index: 4;
+  }
+}

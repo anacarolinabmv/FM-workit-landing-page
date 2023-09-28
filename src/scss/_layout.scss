@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  max-width: 144rem;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  padding: 4rem 8rem;
+  justify-content: space-between;
+}
+.header {
+  text-align: center;
+  height: 73rem;
+  z-index: 5;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $purple;
+    border-radius: 50%;
+    transform-origin: bottom;
+    transform: scale(4);
+    z-index: -1;
+  }
+  &__img-box {
+    height: 40rem;
+    width: 77rem;
+    margin: 0 auto;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+.main {
+}
+.footer {
+}

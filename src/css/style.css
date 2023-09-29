@@ -149,6 +149,41 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.footer {
+  text-align: center;
+  padding: 4rem;
+}
+.footer .social-icons {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.footer .social-icons * {
+  width: 2rem;
+  height: 2rem;
+  background-color: #584d62;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.footer .social-icons *:hover {
+  background-color: #24053e;
+}
+.footer .social-icons__facebook {
+  -webkit-mask-image: url(/src/assets/images/icon-facebook.svg);
+  mask-image: url(/src/assets/images/icon-facebook.svg);
+}
+.footer .social-icons__twitter {
+  -webkit-mask-image: url(/src/assets/images/icon-twitter.svg);
+  mask-image: url(/src/assets/images/icon-twitter.svg);
+}
+.footer .social-icons__instagram {
+  -webkit-mask-image: url(/src/assets/images/icon-instagram.svg);
+  mask-image: url(/src/assets/images/icon-instagram.svg);
+}
+
 .btn--inline {
   display: inline-block;
   color: #fff;

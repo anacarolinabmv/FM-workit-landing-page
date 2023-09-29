@@ -102,3 +102,42 @@
     }
   }
 }
+
+.footer {
+  text-align: center;
+  padding: 4rem;
+
+  .social-icons {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+
+    & * {
+      width: 2rem;
+      height: 2rem;
+      background-color: $greyish-purple;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      transition: all 300ms;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $purple;
+      }
+    }
+
+    &__facebook {
+      -webkit-mask-image: url(/src/assets/images/icon-facebook.svg);
+      mask-image: url(/src/assets/images/icon-facebook.svg);
+    }
+    &__twitter {
+      -webkit-mask-image: url(/src/assets/images/icon-twitter.svg);
+      mask-image: url(/src/assets/images/icon-twitter.svg);
+    }
+    &__instagram {
+      -webkit-mask-image: url(/src/assets/images/icon-instagram.svg);
+      mask-image: url(/src/assets/images/icon-instagram.svg);
+    }
+  }
+}

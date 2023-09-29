@@ -35,6 +35,9 @@ body {
   @media (max-width: $bp-md) {
     font-size: 7rem;
   }
+  @media (max-width: $bp-xs) {
+    font-size: 5.6rem;
+  }
 }
 .heading-medium {
   font-size: 5.6rem;

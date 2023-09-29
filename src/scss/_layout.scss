@@ -15,6 +15,9 @@
   z-index: 5;
   position: relative;
 
+  @media (max-width: $bp-xs) {
+    height: 68rem;
+  }
   .container {
     padding: 0 12rem;
 
@@ -54,7 +57,7 @@
       transform: scale(0.9);
     }
     @media (max-width: $bp-xs) {
-      margin-top: 2rem;
+      margin-top: 8rem;
       transform: scale(1);
     }
   }
@@ -106,7 +109,7 @@
   height: 80rem;
 
   @media (max-width: $bp-xs) {
-    height: 112rem;
+    height: 124rem;
   }
 
   &::before {
@@ -133,53 +136,6 @@
     @media (max-width: $bp-md) {
       flex-direction: column;
       align-items: flex-start;
-    }
-  }
-
-  .card {
-    margin-top: 25rem;
-    flex: 1;
-
-    @media (max-width: $bp-md) {
-      margin-top: 0rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      column-gap: 2rem;
-      align-items: center;
-      justify-items: start;
-
-      &:first-child {
-        margin-top: 14rem;
-      }
-      &__number-box {
-        grid-row: 1/3;
-      }
-      &__heading {
-        margin-top: 0;
-      }
-      &__text {
-        grid-column: 2;
-        text-align: left;
-        margin-top: 2rem;
-      }
-    }
-
-    @media (max-width: $bp-xs) {
-      justify-items: center;
-      &:first-child {
-        margin-top: 12rem;
-      }
-      &__number-box {
-        grid-row: 1;
-        margin-bottom: 4rem;
-      }
-      &__heading {
-        grid-row: 2;
-      }
-      &__text {
-        grid-row: 3;
-        grid-column: 1;
-      }
     }
   }
 }

@@ -8,6 +8,12 @@
 
 html {
   font-size: 62.5%;
+  @media (max-width: $bp-lg) {
+    font-size: 56.25%;
+  }
+  @media (max-width: $bp-lg) {
+    font-size: 50%;
+  }
 }
 body {
   box-sizing: border-box;
@@ -25,11 +31,18 @@ body {
   font-family: 'Fraunces', serif;
   color: $white;
   line-height: 1;
+
+  @media (max-width: $bp-md) {
+    font-size: 7rem;
+  }
 }
 .heading-medium {
   font-size: 5.6rem;
   font-weight: 600;
   font-family: 'Fraunces', serif;
+  @media (max-width: $bp-md) {
+    font-size: 4rem;
+  }
 }
 .heading-small {
   font-size: 3.2rem;

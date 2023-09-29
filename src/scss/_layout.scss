@@ -8,6 +8,7 @@
   padding: 4rem 0;
   justify-content: space-between;
 }
+
 .header {
   text-align: center;
   height: 73rem;
@@ -31,13 +32,24 @@
     z-index: -1;
   }
   &__img-box {
-    height: 40rem;
-    width: 77rem;
+    max-height: 40rem;
+    max-width: 77rem;
     margin: 0 auto;
   }
 
   &__img {
     width: 100%;
+  }
+
+  .shape-1 {
+    position: absolute;
+    top: 20%;
+    left: -6%;
+  }
+  .shape-2 {
+    position: absolute;
+    top: 45%;
+    right: -2%;
   }
 }
 
@@ -70,14 +82,15 @@
     margin-top: 22rem;
   }
 }
+
 .about {
   .container {
     padding: 10rem 12rem;
     position: relative;
   }
   .founder {
-    height: 40rem;
-    width: 40rem;
+    max-height: 40rem;
+    max-width: 40rem;
     position: absolute;
     &__img {
       height: 100%;
@@ -94,11 +107,16 @@
     margin-top: 14rem;
     z-index: 2;
     position: relative;
+    overflow: hidden;
+
     &__heading {
       margin-bottom: 4rem;
     }
-    &__paragraph {
-      margin-bottom: 2.5rem;
+
+    .shape-3 {
+      position: absolute;
+      bottom: -18%;
+      right: 10%;
     }
   }
 }

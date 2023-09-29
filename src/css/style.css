@@ -82,12 +82,22 @@ body {
   z-index: -1;
 }
 .header__img-box {
-  height: 40rem;
-  width: 77rem;
+  max-height: 40rem;
+  max-width: 77rem;
   margin: 0 auto;
 }
 .header__img {
   width: 100%;
+}
+.header .shape-1 {
+  position: absolute;
+  top: 20%;
+  left: -6%;
+}
+.header .shape-2 {
+  position: absolute;
+  top: 45%;
+  right: -2%;
 }
 
 .details {
@@ -123,8 +133,8 @@ body {
   position: relative;
 }
 .about .founder {
-  height: 40rem;
-  width: 40rem;
+  max-height: 40rem;
+  max-width: 40rem;
   position: absolute;
 }
 .about .founder__img {
@@ -141,12 +151,15 @@ body {
   margin-top: 14rem;
   z-index: 2;
   position: relative;
+  overflow: hidden;
 }
 .about .about-text__heading {
   margin-bottom: 4rem;
 }
-.about .about-text__paragraph {
-  margin-bottom: 2.5rem;
+.about .about-text .shape-3 {
+  position: absolute;
+  bottom: -18%;
+  right: 10%;
 }
 
 .footer {
@@ -241,6 +254,10 @@ body {
 }
 .card__text {
   margin-top: 3rem;
+}
+
+.mg-bottom-xs {
+  margin-bottom: 2.5rem;
 }
 
 .mg-bottom-sm {

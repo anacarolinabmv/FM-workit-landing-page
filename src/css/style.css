@@ -24,8 +24,6 @@ body {
   font-family: "Fraunces", serif;
   color: #fff;
   line-height: 1;
-  margin-bottom: 3rem;
-  margin: 8rem 0 4rem;
 }
 
 .heading-medium {
@@ -153,9 +151,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-.about .about-text__heading {
-  margin-bottom: 4rem;
-}
 .about .about-text .shape-3 {
   position: absolute;
   bottom: -18%;
@@ -178,7 +173,7 @@ body {
   background-color: #584d62;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  transition: all 300ms;
+  transition: all 250ms ease-in-out;
   cursor: pointer;
 }
 .footer .social-icons *:hover {
@@ -197,23 +192,32 @@ body {
   mask-image: url(/src/assets/images/icon-instagram.svg);
 }
 
-.btn--inline {
+.btn--inline:link, .btn--inline:visited {
   display: inline-block;
   color: #fff;
   border-bottom: 2px solid #44ffa1;
   text-decoration: none;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
+  transition: all 250ms ease-in-out;
+}
+.btn--inline:hover, .btn--inline:active {
+  color: #44ffa1;
 }
 
-.btn--green:link,
-.btn--green:visited {
+.btn--green:link, .btn--green:visited {
   color: #24053e;
   display: inline-block;
   background-color: #44ffa1;
   padding: 1.5rem 3rem;
+  border: 1px solid #44ffa1;
   text-decoration: none;
   font-weight: 600;
+  transition: all 250ms ease-in-out;
+}
+.btn--green:hover, .btn--green:active {
+  background-color: transparent;
+  color: #44ffa1;
 }
 
 .underline--green {
@@ -262,6 +266,10 @@ body {
 
 .mg-bottom-sm {
   margin-bottom: 4rem;
+}
+
+.mg-top-lg {
+  margin-top: 8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
